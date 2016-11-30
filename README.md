@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-Base on Admin LTE
+Based on Admin LTE
 
 ## Bugs and Issues
 
