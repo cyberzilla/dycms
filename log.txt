@@ -1,0 +1,24 @@
+#Log 1.48<br>
+Improve Notification Modal<br>
+<br>
+#Log 1.47<br>
+Add Filemanager Page (KCFinder)<br>
+- Testing JSON (Optional)<br>
+<br>
+#Log 1.46<br>
+Bug Fix SliderTab<br>
+Add Fullscreen Function<br>
+<br>
+#Log 1.45<br>
+Add Chart Page (C3.js)<br>
+Change From TabDrop To SliderTab<br>
+<br>
+#Log 1.44<br>
+change Tab variable to Object<br>
+Fix Tab Title (Without define in attr)<br>
+Add Sidebar Search Function<br>
+<br>
+#Log 1.43<br>
+Fix Tab Rooticon (Without define in attr)<br>
+Fix Tab Root Name (Without define in attr)<br>
+Fix Tab Icon (Without define in attr)<br>

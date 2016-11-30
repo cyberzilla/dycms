@@ -1,0 +1,58 @@
+html * {
+    outline: 0 none !important;
+}
+
+a{
+	cursor:pointer;
+}
+
+.nav>li>a{
+	padding: 10px;
+	padding-right: 0px;
+}
+
+.closeHTab{
+	
+	font-size:14px;
+	position:relative;
+	top:-10px;
+	right:2px;
+	
+	/*
+	font-size:14px;
+	position:absolute;
+	top:1px;
+	right:3px;
+	*/
+}
+
+.closeVTab{
+	font-size:14px;
+	position:absolute;
+	top:1px;
+	right:3px;
+}
+
+.close:hover{
+	color:#d70000;
+}
+
+div.tooltip-inner {
+  max-width: none;
+  white-space: nowrap;
+}
+/*
+.arrow-left{
+	width: 0; 
+	height: 0; 
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent; 
+	border-right:15px solid #ffffff; 
+	position:absolute;
+	right: -1px;
+	top:5px;
+}
+*/
+.nav-stacked>li>a{
+	font-size:17px;
+}
