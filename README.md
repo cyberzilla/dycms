@@ -17,5 +17,6 @@ Develop by Abu Dzakiyyah
 * https://github.com/cyberzilla
 
 ## Copyright and License
+DyCMS is an open source project by Abu Dzakiyyah that is licensed under MIT.
 
-Copyright 2015-2016 
+Copyright CyberzillaDev 2016 
