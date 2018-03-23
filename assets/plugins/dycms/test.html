@@ -1,0 +1,27 @@
+<html>
+
+<script src="../jquery/jquery.min.js"></script>
+<script src="js/dycms-storage.js"></script>
+<script>
+    function getJSONFile() {
+        $.get('lib/dycms.json',function (response) {
+            console.log(response[0].DataContent[0]);
+        })
+    }
+</script>
+<body>
+<button onclick="getData({key:'testingStorage'})">Get Data</button>
+<button onclick="pushData({key:'testingStorage',data:[{index:5,status:''},{index:3,status:''},{index:4,status:''}]})">Push Data</button>
+<button onclick="pushData({key:'testingStoragex',data:[{index:5,status:''},{index:3,status:''},{index:4,status:''}]})">Push Data</button>
+<button onclick="changeData({key:'testingStorage',findParam:'index',setParam:'status',find:2,setValue:'active:haha'})">Change Data</button>
+<button onclick="findData({key:'testingStorage',param:'index',find:2})">Find Data</button>
+<button onclick="updateData({key:'testingStorage',findParam:'index',find:4,setParam:'status',setValue:'lorem'})">Update Data</button>
+<button onclick="deleteData({key:'testingStorage',param:'index',find:4})">Delete Data</button>
+<button onclick="deleteKey({key:'testingStorage'})">Delete Key</button>
+<button onclick="destroyStorage()">Destroy Storage</button>
+
+<br><br>
+<button onclick="getJSONFile()">Get JSON File</button>
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+.content-wrapper>.content{
+  padding:2px;
+}
+
+.mainNav{
+  margin-bottom: 0px;
+  background: #ecf0f5;
+}
+.mainNav>ul.nav{
+  border-top-right-radius:0px;
+  border-top-left-radius:0px;
+  display: flex;
+  flex-flow: row nowrap;
+  border-bottom-color: #d2d2d2;
+}
+
+.mainNav>ul.nav>li:first-child{
+  margin-left: 1px;
+}
+
+.mainNav>ul.nav>li{
+  margin-right: 1px;
+  white-space: nowrap;
+}
+
+.mainNav>ul.nav>li:first-child>a{
+  padding: 5px 8px 5px 8px;
+}
+
+.mainNav>ul.nav>li.active:first-child>a{
+  border-left-color:#d2d2d2;
+}
+
+.mainNav>ul.nav>li>a{
+  padding: 5px 17px 5px 8px;
+  color: #c7c7c7;
+}
+
+.mainNav>ul.nav>li:not(.active)>a:hover{
+  background-color: #d2d2d2;
+  color: #fff;
+  text-shadow: 1px 1px 1px #575757;
+}
+
+.mainNav>ul.nav>li>a>i.fa,.mainNav>ul.nav>li>a>i.icon{
+  font-size: 15px;
+}
+
+.mainNav>ul.nav>li.active{
+  margin-bottom: -1px;
+}
+
+.mainNav>ul.nav>li.active>a{
+  border-left-color: #d2d2d2;
+  border-right-color: #d2d2d2;
+}
+
+.mainNav>ul.nav>li>a>span.closeTab{
+  display: none;
+}
+
+.mainNav>ul.nav>li.active>a>span.closeTab{
+  top:-3px;
+  right:2px;
+  position:absolute;
+  cursor:pointer;
+  display: inline-block;
+  color: #d2d2d2;
+}
+
+.mainNav>ul.nav>li.active>a>span.closeTab:hover{
+  color: red;
+}
+
+.mainNav>div.tab-content{
+  padding: 5px 10px 10px 10px;
+}
+
+.mainContent{
+  padding: 5px 7px 0px 7px;
+  background: #f7f8f9;
+  border-radius: 5px;
+  border:1px solid #d2d2d2;
+}
+
+ul.sidebar-menu>li.treeview>a, ul.treeview-menu>li>a.subMenu{
+  cursor: pointer;
+}
+
+section.content-header{
+  padding:0px 0px 5px 0px;
+}
+
+section.content-header .breadcrumb{
+  top:0px;
+}
+
+.main-footer{
+  padding:7px;
+}
+
+ol.breadcrumb{
+  right:0px !important;
+  padding-right:0px !important;
+}
+
+li.treeview>a:hover, li.treeview.menu-open>a{
+  border-left-color: #3c8dbc;
+}
+
+@media (min-width:992px) {
+  .mainContent>.row>[class*="col-"]{
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .mainContent>.row>[class*="col-"]:first-child{
+    padding-left: 15px;
+    padding-right: 5px;
+  }
+
+  .mainContent>.row>[class*="col-"]:last-child{
+    padding-left: 5px;
+    padding-right: 15px;
+  }
+
+  .mainContent>.row>[class*="col-"]:only-child{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.box{
+  -webkit-box-shadow: 0px 0px 1px 1px rgba(209,209,209,1);
+  -moz-box-shadow: 0px 0px 1px 1px rgba(209,209,209,1);
+  box-shadow: 0px 0px 1px 1px rgba(209,209,209,1);
+}
+
