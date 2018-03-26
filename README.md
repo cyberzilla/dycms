@@ -1,6 +1,8 @@
 # DyCMS
 An other content management system
 
+!["DyCMS"](https://raw.githubusercontent.com/cyberzilla/dycms/master/screen.png "DyCMS Screen")
+
 DyCMS is a HTML Template based On AdminLTE, can easily transform into PHP CMS...
 
 FEATURE:
