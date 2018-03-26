@@ -1,0 +1,81 @@
+[
+  {
+    "AppName":"DyCMS",
+	"AppDesc":"An Other Content Management System",
+    "AppVersion":"3.0",
+	"AppLink":"index.html",
+	"AppLogo":"assets/images/AppLogo.png",
+	"AppWebsite":"https://www.dzakiyyah.com",
+    "AppAuthor":"Abu Dzakiyyah",
+	"AuthorWebsite":"https://abu.dzakiyyah.com",
+    "DataContent": [
+						{
+							"moduleName":"moduleMenu",
+							"moduleData":[
+											{
+												"mainMenuId":"home",
+												"mainMenuTitle":"Beranda",
+												"mainMenuIcon":"fa fa-dashboard",
+												"mainMenuUrl":"pages/home.html",
+                                                "mainMenuDesc":"Beranda",
+												"mainMenuChild":false,
+												"mainMenuContent":[]
+											},
+											{
+												"mainMenuId":"pages",
+												"mainMenuTitle":"Pages",
+												"mainMenuIcon":"fa fa-folder",
+												"mainMenuUrl":"",
+												"mainMenuDesc":"",
+												"mainMenuChild":true,
+												"mainMenuContent":[
+													{
+														"subMenuId":"user",
+														"subMenuUrl":"pages/user.html",
+														"subMenuTitle":"User",
+														"subMenuDesc": "Manajemen User",
+														"subMenuIcon": "fa fa-users"
+													},
+													{
+														"subMenuId":"profile",
+														"subMenuUrl":"pages/profile.html",
+														"subMenuTitle":"Profile",
+														"subMenuDesc": "Profile User",
+														"subMenuIcon": "fa fa-user"
+													},
+													{
+														"subMenuId":"notification",
+														"subMenuUrl":"pages/notification.html",
+														"subMenuTitle":"Notifikasi",
+														"subMenuDesc": "Manajemen Notifikasi",
+														"subMenuIcon": "fa fa-bell-o"
+													},
+													{
+														"subMenuId":"invoice",
+														"subMenuUrl":"pages/invoice.html",
+														"subMenuTitle":"Invoice",
+														"subMenuDesc": "Manajemen Invoice",
+														"subMenuIcon": "fa fa-list-alt"
+													},
+													{
+														"subMenuId":"typography",
+														"subMenuUrl":"pages/typography.html",
+														"subMenuTitle":"Typography",
+														"subMenuDesc": "Manajemen Typography",
+														"subMenuIcon": "fa fa-text-width"
+													},
+													{
+														"subMenuId":"form",
+														"subMenuUrl":"pages/form.html",
+														"subMenuTitle":"Form",
+														"subMenuDesc": "Manajemen Form",
+														"subMenuIcon": "fa fa-text-width"
+													}
+												]
+											}
+
+										]
+						}	    				
+				    ]
+  }
+]

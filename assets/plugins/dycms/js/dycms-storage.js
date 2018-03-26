@@ -1,7 +1,7 @@
 /*! Copyright (c) 2018 Abu Dzakiyyah (https://abu.dzakiyyah.com)
  * Licensed under the MIT (http://www.opensource.org/licenses/mit-license.php)
  *
- * Version: 0.1
+ * Version: 1.0
  * ProjectName: dycms-storage.js
  */
 
@@ -21,13 +21,20 @@ function getData(dycms){
 function pushData(dycms){
     var key = dycms.key,
         data = dycms.data,
+        replace = dycms.replace,
         debug = dycms.debug,
         jsonData = JSON.parse(localStorage[key]===undefined?JSON.stringify([]):localStorage[key]);
-    if(data.length>1){
-        jsonData = jsonData.concat(data);
+
+    if(replace!==true || replace===undefined || replace === false){
+        if(data.length>1){
+            jsonData = jsonData.concat(data);
+        }else{
+            jsonData.push(data[0]);
+        }
     }else{
-        jsonData.push(data[0]);
+        jsonData = data;
     }
+
     if(debug!==true || debug===undefined || debug===false){
         localStorage.setItem(key,JSON.stringify(jsonData));
     }else{

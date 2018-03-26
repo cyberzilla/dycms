@@ -3,24 +3,27 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 2 | Dashboard</title>
+  <title>AppName</title>
+  <link href="assets/images/AppLogo.png" rel="shortcut icon">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="assets/plugins/ionicons/css/ionicons.min.css">
   <link rel="stylesheet" href="assets/plugins/core/css/AdminLTE.min.css">
-  <link rel="stylesheet" href="assets/plugins/core/css/allskins.min.css">
+  <link rel="stylesheet" href="assets/plugins/core/css/skins/_all-skins.min.css">
   <link rel="stylesheet" href="assets/plugins/pace/pace.min.css">
   <!--<link rel="stylesheet" href="assets/plugins/pace/themes/white/pace-theme-flash.css">-->
   <link rel="stylesheet" href="assets/plugins/core/font/font.min.css">
-  <link rel="stylesheet" href="assets/plugins/dycms/less/dycms.css">
+  <link rel="stylesheet" href="assets/plugins/jAlert/jquery.alerts.min.css">
+  <link rel="stylesheet" href="assets/plugins/dycms/css/dycms.min.css">
 </head>
 <body class="hold-transition skin-blue sidebar-mini fixed">
+<div class="windowloader"></div>
 <div class="wrapper">
   <header class="main-header">
     <a href="index.html" class="logo">
-      <span class="logo-mini"><b>A</b>LT</span>
-      <span class="logo-lg"><b>Admin</b>LTE</span>
+      <span class="logo-mini">AppName</span>
+      <span class="logo-lg">AppName</span>
     </a>
     <nav class="navbar navbar-static-top">
       <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
@@ -294,76 +297,6 @@
       </form>
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">MAIN NAVIGATION</li>
-        <li class="treeview">
-          <a>
-            <i class="fa fa-dashboard"></i> <span>Dashboard</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li>
-              <a class="subMenu"
-                  data-url="pages/user.html"
-                  data-id="users"
-                  data-desc="Manajemen User"
-              ><i class="fa fa-users"></i> <span>Users</span></a>
-            </li>
-            <li>
-              <a class="subMenu"
-                  data-url="pages/profile.html"
-                  data-id="profile"
-                  data-desc="Profile User"
-              ><i class="fa fa-user"></i> <span>Profile</span></a>
-            </li>
-            <li>
-              <a class="subMenu"
-                  data-url="pages/notification.html"
-                  data-id="notification"
-                  data-desc="Manajemen Notification"
-                  ><i class="fa fa-bell-o"></i> <span>Notification</span></a>
-            </li>
-            <li>
-              <a class="subMenu"
-                 data-url="pages/invoice.html"
-                 data-id="invoice"
-                 data-desc="Cetak Invoice"
-              ><i class="fa fa-list-alt"></i> <span>Invoice</span></a>
-            </li>
-            <li>
-              <a class="subMenu"
-                 data-url="pages/typography.html"
-                 data-id="typography"
-                 data-desc="Typography"
-              ><i class="fa fa-text-width"></i> <span>Typography</span></a>
-            </li>
-            <li>
-              <a class="subMenu"
-                 data-url="pages/form.html"
-                 data-id="form"
-                 data-desc="Form Example"
-              ><i class="fa fa-text-width"></i> <span>General Form</span></a>
-            </li>
-
-          </ul>
-        </li>
-        <li class="treeview">
-          <a>
-            <i class="fa fa-cogs"></i> <span>Pengaturan</span>
-            <span class="pull-right-container">
-              <i class="fa fa-angle-left pull-right"></i>
-            </span>
-          </a>
-          <ul class="treeview-menu">
-            <li class="">
-              <a class="subMenu"
-                  data-url="pages/changepassword.html"
-                  data-id="changepassword"
-                  data-desc="Manajemen Kata Sandi"
-              ><i class="fa fa-key"></i> <span>Ganti Password</span></a>
-            </li>
-          </ul>
-        </li>
       </ul>
     </section>
     <!-- /.sidebar -->
@@ -399,9 +332,9 @@
   </div>
   <footer class="main-footer">
     <div class="pull-right hidden-xs">
-      <b>Version</b> 1.0
+      <b>Version</b> <span class="version">1.0</span>
     </div>
-    <strong>Copyright &copy; 2018<a href="https://abu.dzakiyyah.com"> Abu Dzakiyyah</a>.</strong> All rights
+    <span class="copyright">Copyright &copy; 2018 <a href="https:#"> </a>.</span> All rights
     reserved.
   </footer>
 </div>
@@ -418,7 +351,15 @@
 <script src="assets/plugins/jquery-nicescroll/jquery.nicescroll.min.js"></script>
 <script src="assets/plugins/fastclick/fastclick.min.js"></script>
 <script src="assets/plugins/core/js/adminlte.min.js"></script>
-<script src="assets/plugins/core/js/tabs.min.js"></script>
+<script src="assets/plugins/jAlert/jquery.alerts.min.js"></script>
+<script src="assets/plugins/dycms/js/dycms-tabs.min.js"></script>
+<script src="assets/plugins/dycms/js/dycms-storage.min.js"></script>
 <script src="assets/plugins/dycms/js/dycms.min.js"></script>
+<script>
+    $(function () {
+       //Show Loader if Refresh Browser
+       $(".windowloader").fadeOut("slow");
+    })
+</script>
 </body>
 </html>
