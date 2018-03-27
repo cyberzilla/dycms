@@ -3,27 +3,28 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AppName</title>
+  <title>Loading...</title>
   <link href="assets/images/AppLogo.png" rel="shortcut icon">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="assets/plugins/ionicons/css/ionicons.min.css">
   <link rel="stylesheet" href="assets/plugins/core/css/AdminLTE.min.css">
-  <link rel="stylesheet" href="assets/plugins/core/css/allskins.min.css">
+  <link rel="stylesheet" href="assets/plugins/core/css/all-skins.min.css">
   <link rel="stylesheet" href="assets/plugins/pace/pace.min.css">
   <!--<link rel="stylesheet" href="assets/plugins/pace/themes/white/pace-theme-flash.css">-->
   <link rel="stylesheet" href="assets/plugins/core/font/font.min.css">
+  <link rel="stylesheet" href="assets/plugins/animate/animate.min.css">
   <link rel="stylesheet" href="assets/plugins/jAlert/jquery.alerts.min.css">
   <link rel="stylesheet" href="assets/plugins/dycms/css/dycms.min.css">
 </head>
-<body class="hold-transition skin-blue sidebar-mini fixed">
+<body class="hold-transition sidebar-mini fixed skin-blue">
 <div class="windowloader"></div>
 <div class="wrapper">
   <header class="main-header">
     <a href="index.html" class="logo">
-      <span class="logo-mini">AppName</span>
-      <span class="logo-lg">AppName</span>
+      <span class="logo-mini">Loading...</span>
+      <span class="logo-lg">Loading...</span>
     </a>
     <nav class="navbar navbar-static-top">
       <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
@@ -38,7 +39,7 @@
               <i class="fa fa-envelope-o"></i>
               <span class="label label-success">4</span>
             </a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu" data-dropdown-in="bounceIn" data-dropdown-out="fadeOut">
               <li class="header">You have 4 messages</li>
               <li>
                 <!-- inner menu: contains the actual data -->
@@ -115,7 +116,7 @@
               <i class="fa fa-bell-o"></i>
               <span class="label label-warning">10</span>
             </a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu" data-dropdown-in="bounceIn" data-dropdown-out="fadeOut">
               <li class="header">You have 10 notifications</li>
               <li>
                 <!-- inner menu: contains the actual data -->
@@ -157,7 +158,7 @@
               <i class="fa fa-flag-o"></i>
               <span class="label label-danger">9</span>
             </a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu" data-dropdown-in="bounceIn" data-dropdown-out="fadeOut">
               <li class="header">You have 9 tasks</li>
               <li>
                 <!-- inner menu: contains the actual data -->
@@ -235,7 +236,7 @@
               <img src="assets/images/img/user2-160x160.jpg" class="user-image" alt="User Image">
               <span class="hidden-xs">Alexander Pierce</span>
             </a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu" data-dropdown-in="bounceIn" data-dropdown-out="fadeOut">
               <!-- User image -->
               <li class="user-header">
                 <img src="assets/images/img/user2-160x160.jpg" class="img-circle" alt="User Image">
@@ -269,6 +270,33 @@
                   <a href="#" class="btn btn-default btn-flat">Sign out</a>
                 </div>
               </li>
+            </ul>
+          </li>
+          <li class="dropdown skin-chooser">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Theme Chooser">
+              <i class="fa fa-cog fa-spin"></i>
+            </a>
+            <ul class="dropdown-menu" style="padding:2px" data-dropdown-in="bounceIn" data-dropdown-out="fadeOut">
+              <li class="header text-center">Themes</li>
+              <table class="tb-skin">
+                <tr>
+                  <td title="Blue"><img src="assets/images/skins/blue.png" alt="skin-blue"></td>
+                  <td title="Black"><img src="assets/images/skins/black.png" alt="skin-black" ></td>
+                  <td title="Purple"><img src="assets/images/skins/purple.png" alt="skin-purple" ></td>
+                </tr><tr>
+                  <td title="Green"><img src="assets/images/skins/green.png" alt="skin-green" ></td>
+                  <td title="Red"><img src="assets/images/skins/red.png" alt="skin-red" ></td>
+                  <td title="Yellow"><img src="assets/images/skins/yellow.png" alt="skin-yellow" ></td>
+                </tr><tr>
+                  <td title="Blue Light"><img src="assets/images/skins/blue-light.png" alt="skin-blue-light" ></td>
+                  <td title="Black Light"><img src="assets/images/skins/black-light.png" alt="skin-black-light" ></td>
+                  <td title="Purple Light"><img src="assets/images/skins/purple-light.png" alt="skin-purple-light" ></td>
+                </tr><tr>
+                  <td title="Green Light"><img src="assets/images/skins/green-light.png" alt="skin-green-light" ></td>
+                  <td title="Red Light"><img src="assets/images/skins/red-light.png" alt="skin-red-light" ></td>
+                  <td title="Yellow Light"><img src="assets/images/skins/yellow-light.png" alt="skin-yellow-light" ></td>
+                </tr>
+              </table>
             </ul>
           </li>
         </ul>
@@ -332,9 +360,9 @@
   </div>
   <footer class="main-footer">
     <div class="pull-right hidden-xs">
-      <b>Version</b> <span class="version">1.0</span>
+      <b>Version</b> <span class="version">Loading...</span>
     </div>
-    <span class="copyright">Copyright &copy; 2018 <a href="https:#"> </a>.</span> All rights
+    <span class="copyright">Copyright &copy; 2018 <a href="https:#">Loading...</a>.</span> All rights
     reserved.
   </footer>
 </div>
@@ -352,6 +380,7 @@
 <script src="assets/plugins/fastclick/fastclick.min.js"></script>
 <script src="assets/plugins/core/js/adminlte.min.js"></script>
 <script src="assets/plugins/jAlert/jquery.alerts.min.js"></script>
+<script src="assets/plugins/animate/animate-dropdown.min.js"></script>
 <script src="assets/plugins/dycms/js/dycms-tabs.min.js"></script>
 <script src="assets/plugins/dycms/js/dycms-storage.min.js"></script>
 <script src="assets/plugins/dycms/js/dycms.min.js"></script>
