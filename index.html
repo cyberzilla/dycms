@@ -12,7 +12,6 @@
   <link rel="stylesheet" href="assets/plugins/core/css/AdminLTE.min.css">
   <link rel="stylesheet" href="assets/plugins/core/css/all-skins.min.css">
   <link rel="stylesheet" href="assets/plugins/pace/pace.min.css">
-  <!--<link rel="stylesheet" href="assets/plugins/pace/themes/white/pace-theme-flash.css">-->
   <link rel="stylesheet" href="assets/plugins/core/font/font.min.css">
   <link rel="stylesheet" href="assets/plugins/animate/animate.min.css">
   <link rel="stylesheet" href="assets/plugins/jAlert/jquery.alerts.min.css">
@@ -37,7 +36,7 @@
           <li class="dropdown messages-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <i class="fa fa-envelope-o"></i>
-              <span class="label label-success">4</span>
+              <span class="label label-success animated bounce infinite" style="display: inline-block">4</span>
             </a>
             <ul class="dropdown-menu" data-dropdown-in="bounceIn" data-dropdown-out="">
               <li class="header">You have 4 messages</li>
@@ -114,7 +113,7 @@
           <li class="dropdown notifications-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <i class="fa fa-bell-o"></i>
-              <span class="label label-warning">10</span>
+              <span class="label label-warning animated swing infinite" style="display: inline-block">10</span>
             </a>
             <ul class="dropdown-menu" data-dropdown-in="bounceIn" data-dropdown-out="">
               <li class="header">You have 10 notifications</li>
@@ -156,7 +155,7 @@
           <li class="dropdown tasks-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <i class="fa fa-flag-o"></i>
-              <span class="label label-danger">9</span>
+              <span class="label label-danger animated wobble infinite" style="display: inline-block">9</span>
             </a>
             <ul class="dropdown-menu" data-dropdown-in="bounceIn" data-dropdown-out="">
               <li class="header">You have 9 tasks</li>
@@ -370,21 +369,16 @@
     <div class="pull-right hidden-xs">
       <b>Version</b> <span class="version">Loading...</span>
     </div>
-    <span class="copyright">Copyright &copy; 2018 <a href="https:#">Loading...</a>.</span> All rights
+    <span class="copyright">Copyright &copy; 2018 <a href="#">Loading...</a>.</span> All rights
     reserved.
   </footer>
 </div>
 <script src="assets/plugins/jquery/jquery.min.js"></script>
 <script src="assets/plugins/jQueryUI/jquery-ui.min.js"></script>
-<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
-<script>
-  $.widget.bridge('uibutton', $.ui.button);
-</script>
 <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
 <script src="assets/plugins/pace/pace.min.js"></script>
 <script src="assets/plugins/less/less.min.js"></script>
 <script src="assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js"></script>
-<script src="assets/plugins/jquery-nicescroll/jquery.nicescroll.min.js"></script>
 <script src="assets/plugins/fastclick/fastclick.min.js"></script>
 <script src="assets/plugins/core/js/adminlte.min.js"></script>
 <script src="assets/plugins/jAlert/jquery.alerts.min.js"></script>
@@ -396,6 +390,12 @@
     $(function () {
        //Show Loader if Refresh Browser
        $(".windowloader").fadeOut("slow");
+
+       // $(window).resize(function(){
+       //    var h=$(window).height()-170;
+       //    $('.mainContent').height(h);
+       //    $('.slimScrollDiv').height(h);
+       // });
     })
 </script>
 </body>
