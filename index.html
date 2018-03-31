@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="assets/plugins/jAlert/jquery.alerts.min.css">
   <link rel="stylesheet" href="assets/plugins/dycms/css/dycms.min.css">
 </head>
-<body class="hold-transition sidebar-mini fixed skin-blue">
+<body class="hold-transition sidebar-mini fixed">
 <div class="windowloader"></div>
 <div class="wrapper">
   <header class="main-header">
@@ -39,7 +39,7 @@
               <i class="fa fa-envelope-o"></i>
               <span class="label label-success">4</span>
             </a>
-            <ul class="dropdown-menu" data-dropdown-in="bounceIn" data-dropdown-out="fadeOut">
+            <ul class="dropdown-menu" data-dropdown-in="bounceIn" data-dropdown-out="">
               <li class="header">You have 4 messages</li>
               <li>
                 <!-- inner menu: contains the actual data -->
@@ -116,7 +116,7 @@
               <i class="fa fa-bell-o"></i>
               <span class="label label-warning">10</span>
             </a>
-            <ul class="dropdown-menu" data-dropdown-in="bounceIn" data-dropdown-out="fadeOut">
+            <ul class="dropdown-menu" data-dropdown-in="bounceIn" data-dropdown-out="">
               <li class="header">You have 10 notifications</li>
               <li>
                 <!-- inner menu: contains the actual data -->
@@ -158,7 +158,7 @@
               <i class="fa fa-flag-o"></i>
               <span class="label label-danger">9</span>
             </a>
-            <ul class="dropdown-menu" data-dropdown-in="bounceIn" data-dropdown-out="fadeOut">
+            <ul class="dropdown-menu" data-dropdown-in="bounceIn" data-dropdown-out="">
               <li class="header">You have 9 tasks</li>
               <li>
                 <!-- inner menu: contains the actual data -->
@@ -236,7 +236,7 @@
               <img src="assets/images/img/user2-160x160.jpg" class="user-image" alt="User Image">
               <span class="hidden-xs">Alexander Pierce</span>
             </a>
-            <ul class="dropdown-menu" data-dropdown-in="bounceIn" data-dropdown-out="fadeOut">
+            <ul class="dropdown-menu" data-dropdown-in="bounceIn" data-dropdown-out="">
               <!-- User image -->
               <li class="user-header">
                 <img src="assets/images/img/user2-160x160.jpg" class="img-circle" alt="User Image">
@@ -264,19 +264,27 @@
               <!-- Menu Footer-->
               <li class="user-footer">
                 <div class="pull-left">
-                  <a href="#" class="btn btn-default btn-flat">Profile</a>
+                  <a class="tabCreate btn btn-default btn-flat"
+                     data-url="pages/profile.html"
+                     data-id="profile"
+                     data-desc="Manajemen Profile"
+                     data-parent="Pages"
+                     data-parent-icon="fa fa-folder"
+                     data-title="Profile"
+                     data-icon="fa fa-user"
+                  >Profile</a>
                 </div>
                 <div class="pull-right">
-                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                  <a href="login.html" class="btn btn-default btn-flat">Sign out</a>
                 </div>
               </li>
             </ul>
           </li>
-          <li class="dropdown skin-chooser">
+          <li class="dropdown theme-chooser">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Theme Chooser">
               <i class="fa fa-cog fa-spin"></i>
             </a>
-            <ul class="dropdown-menu" style="padding:2px" data-dropdown-in="bounceIn" data-dropdown-out="fadeOut">
+            <ul class="dropdown-menu" style="padding:2px" data-dropdown-in="bounceIn" >
               <li class="header text-center">Themes</li>
               <table class="tb-skin">
                 <tr>
@@ -349,7 +357,7 @@
                     <li class="active">Welcome</li>
                   </ol>
                 </section>
-                <section class="content text-justify mainContent" id="homeContent">
+                <section class="content text-justify mainContent animated fadeIn" id="homeContent">
                 </section>
               </div>
             </div>
