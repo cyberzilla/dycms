@@ -2,7 +2,7 @@
   {
     "AppName":"DyCMS",
 	"AppDesc":"An Other Content Management System",
-    "AppVersion":"3.3",
+    "AppVersion":"3.3a",
 	"AppLink":"index.html",
 	"AppLogo":"assets/images/AppLogo.png",
 	"AppWebsite":"https://www.dzakiyyah.com",
@@ -70,6 +70,30 @@
 														"subMenuTitle":"Form",
 														"subMenuDesc": "Manajemen Form",
 														"subMenuIcon": "fa fa-text-width"
+													},
+													{
+														"subMenuId":"general",
+														"subMenuUrl":"pages/general.html",
+														"subMenuTitle":"General Element",
+														"subMenuDesc": "General Element",
+														"subMenuIcon": "fa fa-table"
+													}
+												]
+											},
+											{
+												"mainMenuId":"production",
+												"mainMenuTitle":"Production Form for Application",
+												"mainMenuIcon":"fa fa-folder-open",
+												"mainMenuUrl":"",
+												"mainMenuDesc":"",
+												"mainMenuChild":true,
+												"mainMenuContent":[
+													{
+														"subMenuId":"manageUsers",
+														"subMenuUrl":"pages/home.html",
+														"subMenuTitle":"Manage Users For Application Dycms",
+														"subMenuDesc": "Manage Users",
+														"subMenuIcon": "fa fa-users"
 													}
 												]
 											}

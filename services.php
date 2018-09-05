@@ -13,7 +13,7 @@ if($username === 'cyberzilla'){
     if($password===""){
         $response = array(
             "namaLengkap"=>"Dedy Miswar",
-            "profilPicture"=>"assets/images/img/user8-128x128.jpg"
+            "profilPicture"=>"assets/images/img/aby.bmp"
         );
     }else if($password==='admin'){
         $response = array("status"=>"login_sukses");

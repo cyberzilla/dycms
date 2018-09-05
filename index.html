@@ -7,6 +7,7 @@
   <link href="assets/images/AppLogo.png" rel="shortcut icon">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/plugins/select2/css/select2.min.css">
   <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="assets/plugins/ionicons/css/ionicons.min.css">
   <link rel="stylesheet" href="assets/plugins/core/css/AdminLTE.min.css">
@@ -15,9 +16,10 @@
   <link rel="stylesheet" href="assets/plugins/core/font/font.min.css">
   <link rel="stylesheet" href="assets/plugins/animate/animate.min.css">
   <link rel="stylesheet" href="assets/plugins/jAlert/jquery.alerts.min.css">
+  <link rel="stylesheet" href="assets/plugins/prettycheckbox/pretty-checkbox.min.css">
   <link rel="stylesheet" href="assets/plugins/dycms/css/dycms.min.css">
 </head>
-<body class="hold-transition sidebar-mini fixed">
+<body class="hold-transition fixed">
 <div class="windowloader"></div>
 <div class="wrapper">
   <header class="main-header">
@@ -280,7 +282,10 @@
             </ul>
           </li>
           <li class="dropdown theme-chooser">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Theme Chooser">
+            <a style="cursor:pointer;text-shadow: 0px 0px 15px #fff;-webkit-text-stroke: 1px #fff;"
+               class="dropdown-toggle color-animate text-red"
+               data-toggle="dropdown"
+               title="Theme Chooser">
               <i class="fa fa-cog fa-spin"></i>
             </a>
             <ul class="dropdown-menu" style="padding:2px" data-dropdown-in="bounceIn" >
@@ -376,11 +381,16 @@
 <script src="assets/plugins/jquery/jquery.min.js"></script>
 <script src="assets/plugins/jQueryUI/jquery-ui.min.js"></script>
 <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/plugins/select2/js/select2.full.min.js"></script>
 <script src="assets/plugins/pace/pace.min.js"></script>
 <script src="assets/plugins/less/less.min.js"></script>
 <script src="assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js"></script>
 <script src="assets/plugins/fastclick/fastclick.min.js"></script>
 <script src="assets/plugins/core/js/adminlte.min.js"></script>
+<script src="assets/plugins/jquery-validate/jquery.validate.min.js"></script>
+<script src="assets/plugins/jquery-validate/additional-methods.min.js"></script>
+<script src="assets/plugins/jquery-validate/jquery-validate.bootstrap-tooltip.min.js"></script>
+<script src="assets/plugins/autosize/autosize.min.js"></script>
 <script src="assets/plugins/jAlert/jquery.alerts.min.js"></script>
 <script src="assets/plugins/animate/animate-dropdown.min.js"></script>
 <script src="assets/plugins/dycms/js/dycms-tabs.min.js"></script>
@@ -391,11 +401,6 @@
        //Show Loader if Refresh Browser
        $(".windowloader").fadeOut("slow");
 
-       // $(window).resize(function(){
-       //    var h=$(window).height()-170;
-       //    $('.mainContent').height(h);
-       //    $('.slimScrollDiv').height(h);
-       // });
     })
 </script>
 </body>
