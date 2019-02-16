@@ -1,7 +1,7 @@
 /*! Copyright (c) 2018 Abu Dzakiyyah (https://abu.dzakiyyah.com)
  * Licensed under the MIT (http://www.opensource.org/licenses/mit-license.php)
  *
- * Version: 3.3a
+ * Version: 3.3b
  *
  */
 
@@ -16,7 +16,7 @@ function contentAutoHeight(parameters){
         substract = parameters.substract,
         plugin = parameters.plugin,
         options = "";
-  var contentHeight = $(document).height() - substract;
+  var contentHeight = $(window).height() - substract;
   if(plugin==="niceScroll"){
     $(element).attr("style","height:"+contentHeight+"px;");
     if(drag===true){
